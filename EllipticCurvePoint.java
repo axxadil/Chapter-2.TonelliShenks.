@@ -10,11 +10,11 @@ import java.awt.event.ActionListener;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
-public class EllipticCurvePoint extends JFrame {
+public class EllipticCurvePoints extends JFrame {
     private JTextField aField, bField, pField;
     private JTextArea resultArea;
 
-    public EllipticCurvePoint() {
+    public EllipticCurvePoints() {
         setTitle("Эллиптические кривые и алгоритм Тонелли-Шенкса");
         setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -71,7 +71,7 @@ public class EllipticCurvePoint extends JFrame {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new EllipticCurvePoint().setVisible(true);
+                new EllipticCurvePoints().setVisible(true);
             }
         });
     }
